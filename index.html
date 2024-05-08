@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda de Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Búsqueda de Productos</h1>
+
+    <label for="proveedorSelect">Filtrar por Proveedor:</label>
+    <select id="proveedorSelect">
+        <option value="">Todos</option>
+        
+    </select>
+
+    <label for="categoriaSelect">Filtrar por Categoría:</label>
+    <select id="categoriaSelect">
+        <option value="">Todos</option>
+        
+    </select>
+
+    <button onclick="filtrarProductos()">BUSCAR</button>
+
+    <table id="tablaProductos">
+        <thead>
+            <tr>
+                <th>ID Producto</th>
+                <th>Nombre Producto</th>
+                <th>Proveedor</th>
+                <th>Categoría</th>
+                <th>Precio Unidad</th>
+                <th>Unidades en Existencia</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+        </tbody>
+    </table>
+
+    <script src="buscarProductos.js"></script>
+</body>
+</html>
